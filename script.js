@@ -16,6 +16,7 @@ function mostrar(){
     document.getElementById("p").style.display = "block";
     document.querySelector('.mensaje').style.background = "url('imagenes/Muneco.png')"
     document.querySelector('.mensaje').style.backgroundRepeat = "no-repeat";
+    document.querySelector('.mensaje').style.backgroundPosition = "center"
 }
 
 // Encripta el texto de la sección encriptar y lo pega en el mensaje, oculta la imagen y el texto de desencriptar.
