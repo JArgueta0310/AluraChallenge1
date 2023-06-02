@@ -14,7 +14,7 @@ function ocultar(){
 function mostrar(){
     document.getElementById("h3").style.display = "block";
     document.getElementById("p").style.display = "block";
-    document.querySelector('.mensaje').style.background = "url('imagenes/muñeco.png')"
+    document.querySelector('.mensaje').style.background = "url('imagenes/Muneco.png')"
     document.querySelector('.mensaje').style.backgroundRepeat = "no-repeat";
 }
 
