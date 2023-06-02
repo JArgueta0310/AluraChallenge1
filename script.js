@@ -6,14 +6,14 @@ const mensaje = document.querySelector(".mensaje");
 
 //Oculta el texto de la sección desencriptar.
 function ocultar(){
-    document.getElementById("h3").style.display = "none";
-    document.getElementById("p").style.display = "none";
+    document.getElementById("h3").style.color = "white"
+    document.getElementById("p").style.color = "white"
 }
 
 // Muestra el texto y la imagen de la sección desencriptar.
 function mostrar(){
-    document.getElementById("h3").style.display = "block";
-    document.getElementById("p").style.display = "block";
+    document.getElementById("h3").style.color = "#0A3871"
+    document.getElementById("p").style.color = "#0A3871"
     document.querySelector('.mensaje').style.background = "url('imagenes/Muneco.png')"
     document.querySelector('.mensaje').style.backgroundRepeat = "no-repeat";
     document.querySelector('.mensaje').style.backgroundPosition = "center"
