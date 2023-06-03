@@ -4,6 +4,17 @@ const mensaje = document.querySelector(".mensaje");
 
 // Funciones
 
+
+// Ocultar Botón Copiar
+function ocultarbtncopiar(){
+    document.getElementById("copiar").style.display = "none";
+ }
+ 
+ // Mostrar Botón Copiar
+ function mostrarbtncopiar(){
+     document.querySelector('.copiar').style.display = "block";
+ }
+
 //Oculta el texto de la sección desencriptar.
 function ocultar(){
     document.getElementById("h3").style.color = "white"
@@ -26,6 +37,7 @@ function btnEncriptar (){
     textarea.value = "";
     mensaje.style.backgroundImage = "none";
     ocultar();
+    mostrarbtncopiar();
 }
 
 // Encripta.
@@ -50,6 +62,7 @@ function btnDesencriptar (){
     textarea.value = "";
     mensaje.style.backgroundImage = "none";
     ocultar();
+    mostrarbtncopiar();
 }
 
 // Desencripta.
@@ -73,4 +86,5 @@ function copiarTexto(){
     textarea.value = mensaje.value;
     mensaje.value = "";
     mostrar();
+    ocultarbtncopiar();
 }
